@@ -31,12 +31,12 @@ public class Contador {
         // Validar se parametroUm é MAIOR que parametroDois e lançar a exceção
         if (parametroUm > parametroDois)
             throw new ParametrosInvalidosException();
-
+	    
+	// Realizar o for para imprimir os números com base na variável contagem
         int contagem = parametroDois - parametroUm;
         for (int indice = 1; contagem >= 1; contagem--) {
             System.out.print(indice + ", ");
             indice++;
         }
-        // Realizar o for para imprimir os números com base na variável contagem
     }
 }
